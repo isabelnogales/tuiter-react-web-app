@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+}
+
+
+.wd-rounded-corners-all-around{
+    border_radius:50px;}
+.wd-fg-color-white { color:white;}
+.wd-bg-color-darkgrey {background-color: darkgrey;}
+.wd-fg-RGB-1{color:rgb(29,161,242);}
+.wd-fg-RGB-2{color:rgb(110,118,125);}
+.wd-padding-all-around {
+    padding: 16px;}
+
+.wd-font-size-15{
+    font-size:15px ;}
+.wd-no-line-decoration{
+    text-decoration: none;}
+
+.wd-font-size-13{
+    font-size:13px ;}
+
+.wd-font-size-12{
+    font-size:12px ;}
+
+.wd-float-right{
+    float:right
+}
+
+.wd-position-relative {
+    position:relative;
+    right:16px;
+}
+
+.wd-position-relative-left {
+    position:relative;
+    right:16px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 30px;
+}
+
+.wd-margin-left-16{
+    margin-left: 16px;}

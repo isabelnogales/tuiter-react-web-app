@@ -1,0 +1,129 @@
+body{
+    background-color: black;
+}
+
+/*.wd-position-relative-left {
+    position:relative;
+    left:16px;}
+.wd-position-relative-top{
+    position:relative;
+    top:12px;}*/
+
+
+/*Color white */
+.wd-fg-color-white { color:white;}
+
+/*Color red */
+.wd-fg-color-red { color:red;}
+
+/*No line*/
+.no-line-decoration{
+    text-decoration: none;}
+/*Font size 20*/
+.wd-font-size-20{
+    font-size:20px ;}
+/*Font size 15*/
+.font-size-15{
+    font-size:15px ;}
+
+.wd-font-size-13{
+    font-size:13px ;}
+.wd-fg-color-lightgrey { color:lightgrey;}
+
+/* Linea horizontal */
+.wd-border-down{
+    color:lightgrey;
+    border-style: solid;
+    border-bottom-width: 0.5px;
+}
+/*Margen 5 top*/
+.wd-margin-top-5{
+    margin-top: 5px;}
+
+/*Margin left 16*/
+.wd-margin-left-16{
+    margin-left: 16px;}
+
+/*Margin left 12*/
+.wd-margin-left-12{
+    margin-left: 12px;}
+
+/*Margin left 183.5*/
+.wd-margin-left-183{
+    margin-left: 183.5px;}
+
+/*Margin left 291*/
+.wd-margin-left-291{
+    margin-left: 291px;}
+
+/*Margin top 12*/
+.wd-margin-top-12{
+    margin-top: 12px;}
+
+/*Float left*/
+
+.float-left{
+    float:left
+}
+
+
+.wd-rounded-corners-all-around{
+    border-bottom-left-radius:60px;
+    border-bottom-right-radius:60px;
+    border-top-left-radius:60px;
+    border-top-right-radius:60px;
+}
+
+.wd-position-relative-right {
+    position:relative;
+    left:76px;}
+
+
+
+.float-left{
+    float:left
+}
+
+.wd-margin-left{
+    margin-left: 12px;}
+
+.font-size-15-506{
+    font-size:15px ;
+    max-width:506px;
+}
+
+.wd-margin-left-76{
+    margin-left: 76px;
+}
+
+.wd-margin-top-5{
+    margin-top: 5px;}
+
+.wd-margin-right-16{
+    margin-right:16px;
+}
+
+.wd-margin-bottom{
+    margin-bottom: 12px;}
+
+
+.wd-rounded-top-corners{
+    border-top-left-radius:60px;
+    border-top-right-radius:60px;
+}
+
+
+.wd-font-F{
+    font-size:15px;
+    font-style:bold;
+    max-width:504px;}
+.wd-margin-left-88{
+    margin-left:88px;}
+.wd-margin-right-12{
+    margin-right:12px;}
+.wd-margin-top-12{
+    margin-top: 12px;}
+.wd-margin-bottom-12{
+    margin-bottom: 12px;}
+
+

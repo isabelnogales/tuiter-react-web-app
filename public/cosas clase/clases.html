@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="welcome">Welcome to JavaScript</h1>
+    <script>
+        //Poner esto debajo de <h1>y pasar
+        //a otro script
+        //<script src="index.js" >
+        //</scrip> (escribirlo bien)
+
+        // alert ("Hello World!!!!!")
+        // This is like debog, it prints in the terminañ
+        console.log("Hello World!!!!!")
+        const a=123;
+        const b=234;
+        const c=a+b;
+        console.log(c)
+
+        //reference to data structure
+        document.write("<h2>Hello from JavaScript</h2>");
+        document.write('<ul>
+                            <li>a='+a+'</li>
+                            <li>b='+b+'</li>
+                            <li>c='+c+'</li>
+        </ul>')
+
+
+        document.write(`<h2>Hardcoded list</h2>`);
+        document.write(`<ul>`)
+        document.write(`<li>a=`+a+`</li`)
+        document.write(`<li>b=`+b+`</li`)
+        document.write(`<li>c=`+c+`</li`)
+
+
+        #get an element by ID
+        const welcome = document.getElementById(elementid:'welcome')
+        welcome.innerHTML= "Welcome to web Dev!!!
+        welcome.style.color = "red"
+        //welcome.style.display= "none"
+
+        const passingGrade=65
+        const grades=[98,87,76,65,54,43,32,21]
+        document.write(`grades=${grades}<br/>`)
+        const passingGrades=grades.filter(
+            //anonymus function, you can not call it
+            function (grade:number,index:number) {
+                console.log(index,grade)
+                if (grade >= passingGrade) {
+                    return true;
+                }
+                return false;
+            }
+        )
+        document.write(passing Grades)
+
+        //rewrite
+
+        const passingGrade=65
+        const grades=[98,87,76,65,54,43,32,21]
+        document.write(`grades=${grades}<br/>`)
+        const passingGrades=grades.filter(grade => grade >= passingGrade)
+        document.write(`passing Grades=${passingGrades}><br/>`)
+        const seventySix = grades.find((grade:number) => grade === 76)
+        //ver foto movil
+        document.write(``)
+
+        const squares = grades.map((grade:number) => {return grade*grade})
+        document.write(`squares = ${squares}<br/>`)
+
+    </script>
+
+</body>
+</html>

@@ -3,91 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<link href="index.css"
-          rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet" />
+    <link href="index.css" rel="stylesheet">
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
 <body>
+    <div class="container">
+        <!-- add margin to the top (dimension 2) -->
+        <div class="row mt-2">
+        <!-- Column 1 -->
+        <!-- VER ESTO-->
+        <div class="col-sm-2 col-md-2 col-xl-2 col-xxl-2">
+            <div class="list-group">
+                <a class="list-group-item position-relative fab fa-twitter"></a>
+                <a href="home.html" class="list-group-item position-relative fa fa-home" > Home </a>
+                    <!--span class="position-absolute wd-nudge-up fa fa-home">️Home</span-->
+                <a href="explore.html" class="list-group-item active fa fa-hashtag"> Explore</a>
+                <a href="notification.html" class="list-group-item fa fa-bell "> Notification</a>
+                <a href="messages.html" class="list-group-item fa fa-envelope"> Messages</a>
+                <a href="bookmarks.html" class="list-group-item fa fa-bookmark"> Bookmarks</a>
+                <a href="lists.html" class="list-group-item fa fa-list"> Lists</a>
+                <a href="profile.html" class="list-group-item fa fa-child"> Profile</a>
+                <a href="more.html" class="list-group-item fa fa-dot-circle"> More</a>
+            </div>
+            <!-- add width to the button -->
+            <button class="btn btn-primary w-100 mt-2 rounded-pill">Tuit</button>
+        </div>
+        <!-- Column 2 -->
+        <div class="col sm-10 col-md-7 col-xl-7 col-xxl-6">
+            <div class="row">
+                <!-- we may need to change the sizes -->
+                <div class="col-11 position-relative">
+                    <input placeholder="Search Tuiter"
+                           class="form-control rounded-pill ps-5"/>
+                    <span class="position-absolute wd-nudge-up "> 🔍️</span>
+                </div>
+                <div class="col-2">
+                    <!-- poner emoji en el end-->
+                    <span class="float-end fa fa-cog" style="color: dodgerblue"></span>
+                </div>
+            </div>
 
-<input class= "wd-rounded-corners-all-around wd-fg-color-white wd-bg-color-darkgrey wd-margin-left-16"
-           placeholder=" 🔍️   Search Tuiter" size="150"/>
-<a class= "fg-RGB-2 no-line-decoration wd-margin-left-16" href="settings.html">     ⚙      </a>
+            <!-- should this be links -->
+            <!--a href="explore.html" class="list-group-item active fa fa-hashtag"> Explore</a-->
+            <ul class="nav nav-tabs mt-2">
+                <li class="nav-item">
+                    <a href="for-you.html" class="nav-link active">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a href="trending.html" class="nav-link">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">News</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sports.html" class="nav-link">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="entertainment.html" class="nav-link">Entertainment</a>
+                </li>
+            </ul>
+            <div class="position-relative">
+                <img src="starship.webp" class="w-100"/>
+                <!-- intentar mover a la izq el texto -->
+                <h1 class="position-absolute wd-nudge-up text-white wd- ">SpaceX's Starship</h1>
+            </div>
+            <!--Añadir las cajas como las de la derecha -->
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col text-secondary mt-1">Web Development</div>
+                        <div class="col text-secondary mt-1">-2h</div>
+                        <p></p>
+                        <div class="col mt-1 font-weight-bold">ReactJS</div>
+                        <p></p>
+                        <div class="col font-weight-bold mt-1">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</div>
+                        <div class="col"><img src="../../images/react.svg" class="rounded-3 float-end" width="50px"></div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col text-secondary mt-1 font-weight-bold">JavaScript</div>
+                        <div class="col text-secondary mt-1">-2h</div>
+                        <p></p>
+                        <div class="col font-weight-bold mt-1 font-weight-bold">JavaScript is programming lenguage that can  on browsers as well as all desktop</div>
+                        <p></p>
+                        <div class="col text-secondary mt-1">123k Tweets</div>
+                        <div class="col"><img src="../../images/js.png" class="rounded-3 float-end" width="50px"></div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col text-secondary mt-1">Web Development</div>
+                        <p></p>
+                        <div class="col mt-1 font-weight-bold">jQuery</div>
+                        <p></p>
+                        <div class="col text-secondary mt-1">123K Tweets</div>
+                        <div class="col font-weight-bold"><img src="../../images/jquery.png" class="rounded-3 float-end" width="50px"></div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col text-secondary mt-1">Web Development</div>
+                        <div class="col text-secondary mt-1">-2h</div>
+                        <p></p>
+                        <div class="col mt-1 font-weight-bold">NodeJS</div>
+                        <p></p>
+                        <div class="col text-secondary mt-1">123K Tweets</div>
+                        <div class="col"><img src="../../images/nodejs.png" class="rounded-3 float-end" width="50px"></div>
+                    </div>
+                </li>
+            <h1>Main content</h1>
+        </div>
+        <!-- Column 3 -->
+        <div class="col-md-3 col-xl-3 col-xxl-4">
+            <ul class="list-group">
 
-<br>
+                <li class="list-group-item">
+                    <div class="row">
+                        <!--añadir algo en clase si necesario -->
+                        <div>Who to follow</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col"><img src="../../images/java.png" class="rounded-circle float-start" width="50px"></div>
+                        <div class="col">Java</div>
+                        <div class="col fs-6 ">@Java</div>
+                        <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                    </div>
+                </li>
 
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col"><img src="../../images/relatively.png" class="rounded-circle float-start " width="50px"></div>
+                        <div class="col">Relatively Space</div>
+                        <div class="col fs-6">@relatively Space</div>
+                        <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                    </div>
+                </li>
 
-<a class= "wd-fg-RGB-1 wd-padding-all-around wd-font-size-16 wd-margin-left-16" href="foryou.html">For you</a>
-<a class= "wd-fg-RGB-2 wd-padding-all-around wd-font-size-16 wd-no-line-decoration wd-margin-left-16"  href="trending.html">Trending you</a>
-<a class= "wd-fg-RGB-2 wd-padding-all-around wd-font-size-16 wd-no-line-decoration wd-margin-left-16"  href="covid-2019.html">COVID-2019</a>
-<a class= "wd-fg-RGB-2 wd-padding-all-around wd-font-size-16 wd-no-line-decoration wd-margin-left-16"  href="news.html">News</a>
-<a class= "wd-fg-RGB-2 wd-padding-all-around wd-font-size-16 wd-no-line-decoration wd-margin-left-16"  href="sports.html">Sports</a>
-<a class= "wd-fg-RGB-2 wd-padding-all-around wd-font-size-16 wd-no-line-decoration wd-margin-left-16"  href="entertainment.html">Entertainment</a>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col"><img src="../../images/virgin.svg" class="rounded-circle float-start" width="50px"></div>
+                        <div class="col">Virgin Galactic </div>
+                        <div class="col fs-6">@virgingalactic </div>
+                        <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                    </div>
+                </li>
 
-<hr size="7px" color="grey">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col"><img src="../../images/nasa.png" class="rounded-circle float-start" width="80px"></div>
+                        <div class="col fs-6">NASA</div>
+                        <div class="col fs-6">@NASA</div>
+                        <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                    </div>
+                </li>
 
-<!- PART C ->
+                <li class="list-group-item">
+                    <div class="row">
+                        <!-- make images same width -->
+                        <div class="col"><img src="../../images/tesla.jpeg" class="rounded-circle float-start" width="70px"></div>
+                        <div class="col fs-6">Tesla</div>
+                        <div class="col fs-6">@Tesla</div>
+                        <div class="col"><button class="btn btn-primary rounded-pill float-end">Follow</button></div>
+                    </div>
+                </li
+            </ul>
 
-<p class="wd-font-size-13 wd-fg-RGB-2 wd-margin-left-16">Trending in music </p>
-<p class="wd-fg-color-white wd-margin-left-16"> Bad Bunny</p>
-<p class="wd-font-size-13 wd-fg-RGB-2 wd-margin-left-16">18.9K Tweets </p>
+            <!----- UTILIZAR CARDS ------->
+            <!---- CAMBIAR IMAGENES A IMAGES Y CAMBIAR LINKS ------>
+            <!----- CAMBIAR ICONOS ------>
 
-<p class="wd-font-size-13 wd-fg-RGB-2 wd-margin-left-16">Sports -Trending </p>
-<p class="wd-fg-color-white wd-margin-left-16"> Iker Casillas </p>
-<p class="wd-font-size-13 wd-fg-RGB-2 wd-margin-left-16">58.5K Tweets </p>
+        </div>
 
-<!-  ->
-<hr size="1px" color="grey">
-
-<a class="wd-fg-color-white wd-font-size-12 wd-margin-left-16"> SFGATE </a>
-<a class="wd-font-size-13 wd-fg-RGB-2 wd-margin-left-16"> - A week ago </a>
-<img class="wd-position-relative wd-rounded-corners-all-around wd-float-right wd-margin-left-16"
-     src="primera-noticia.jpg"
-     height="100px"
-     width="100px"/>
-<br>
-<a class="wd-fg-color-white wd-margin-left-16" > The world oldest webcam is still watching over San Francisco</a>
-
-<br><br><br><br><br><br>
-
-<hr size="1px" color="grey">
-
-<a class="wd-font-size-13 wd-fg-RGB-2 wd-margin-left-16"> Politics </a>
-<a class="wd-font-size-13 wd-fg-RGB-2 wd-margin-left-16"> -In direct </a>
-<img class="wd-position-relative wd-rounded-corners-all-around wd-float-right wd-margin-left-16"
-     src="not.jpg"
-     height="100px"
-     width="100px"/>
-<br>
-<a class="wd-fg-color-white wd-margin-left-16" > Massachusetss: Election news and updates </a>
-
-<br><br><br><br><br><br>
-
-
-<hr size="1px" color="grey">
-
-<a class="wd-fg-color-white wd-font-size-12 wd-margin-left-16"> POPSUGAR </a>
-<a class="wd-font-size-13 wd-fg-RGB-2 wd-margin-left-16"> - Yesterday </a>
-<img class="wd-position-relative wd-rounded-corners-all-around wd-float-right wd-margin-left-16"
-     src="cantante.jpg"
-     height="100px"
-     width="100px"/>
-
-<br>
-<a class="wd-fg-color-white wd-margin-left-16" > Lil Nas X Pauses Concert Due to a Bathroom Emergency: "I was Literally Back There Dropping Demonds</a>
-
-<br><br><br><br><br><br>
-
-
-<hr size="1px" color="grey">
-
-<a class="wd-font-size-13 wd-fg-RGB-2 wd-margin-left-16"> Trending in the US </a>
-<br>
-<a class="wd-fg-color-white wd-margin-left-16" > Biden </a>
-
-<img class="wd-position-relative wd-rounded-corners-all-around wd-float-right wd-margin-left-16"
-     src="biden.jpeg"
-     height="100px"
-     width="100px"/>
-<br>
-
+    </div>
+    </div>
 </body>
 </html>

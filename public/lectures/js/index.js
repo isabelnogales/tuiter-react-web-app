@@ -1,5 +1,6 @@
 //alert("Hello world !!")
 
+
 const welcome = document.getElementById("welcome")
 welcome.innerHTML = "Welcome to Web Development"
 welcome.style.color= "red"

@@ -1,5 +1,5 @@
 //alert("Hello World!")
-console.log("Hello World")
+//console.log("Hello World")
 
 
 // 2.4 VARIABLES AND CONSTANTS
@@ -156,3 +156,224 @@ numberArray1.splice(2, 1);
 stringArray1.splice(1, 1);
 console.log(stringArray1);
 console.log(variableArray1);
+
+//For Loops //
+// i++ para que itere por cada elemento
+console.log("For loops");
+for (let i=0; i<stringArray1.length; i++) {
+    const string1 = stringArray1[i];
+    console.log(string1);
+}
+
+//The Map Function //
+// map -> iterate over an array's values, apply a function to each value, and collate all the results in a new array.
+console.log("Map function");
+console.log(numberArray1);
+const squares = numberArray1.map(square);
+console.log(squares);
+const cubes = numberArray1.map(a => a * a * a);
+console.log(cubes);
+
+//The Find Function //
+
+console.log("Find function");
+const four = numberArray1.find(a => a === 4);
+const string3 = stringArray1.find(a => a === 'string3');
+console.log(four);
+console.log(string3);
+
+// The Find Index Function //
+console.log("Find index");
+const fourIndex = numberArray1.findIndex(a => a === 4);
+console.log(fourIndex);
+const string3Index = stringArray1.findIndex(a => a === 'string3');
+console.log(string3Index);
+
+//The Filter Function //
+console.log("The Filter Function");
+const numbersGreaterThan2 = numberArray1.filter(a => a > 2);
+console.log(numbersGreaterThan2);
+const evenNumbers = numberArray1.filter(a => a % 2 === 0);
+console.log(evenNumbers);
+const oddNumbers = numberArray1.filter(a => a % 2 !== 0);
+console.log(oddNumbers);
+
+// 2.8 TEMPLATE STRINGS
+
+console.log("Template Strings");
+const five = 2 + 3;
+const result1 = "2 + 3 = " + five;
+console.log(result1);
+
+const result2 = `2 + 3 = ${2 + 3}`;
+console.log(result2);
+
+const username = "alice";
+const greeting1 = `Welcome home ${username}`;
+console.log(greeting1);
+
+// ERROR !!!!!!!!
+//loggedIn = false;
+//const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
+//console.log(greeting2);
+
+
+// 2.10 EXECUTING jQUERY SCRIPTS
+
+const init = () => {
+    console.log('Hello world from jQuery');
+    /* do the rest of the lab work here */
+
+    // 2.11 BINDING TO THE DOM
+
+    console.log('Binding to DOM');
+    const bindById = $('#bind-by-id');
+    const bindByClass = $('.bind-by-class');
+    console.log(bindById);
+    console.log(bindByClass);
+
+    // 2.12 CHANGING STYLE PROGRAMMATICALLY
+
+    const changeStyle = $('#change-style');
+    const changeStyle2 = $('.change-style');
+    // we can put background-color
+    changeStyle.css('color', 'red');
+    changeStyle2.css('color', 'blue');
+
+    // 2.13 GETTING AND SETTING ATTRIBUTES
+    console.log("Get and set attributes")
+    const getIdAttr = $("#get-id-attr");
+    const id = getIdAttr.attr('id');
+    console.log(id);
+
+    const setClassAttr = $("#set-class-attr");
+    setClassAttr.attr('class', 'class-0');
+
+    // 2.14 ADDING AND REMOVING CLASSES
+    const addClass1Example = $("#add-class-1");
+    addClass1Example.addClass('class-1');
+
+    const removeClass1Example = $("#remove-class-1");
+    removeClass1Example.removeClass('class-2');
+
+    // 2.15 HIDING AND SHOWING CONTENT
+    const hideMe = $("#hide-me");
+    hideMe.hide();
+
+    const showMe = $("#show-me");
+    showMe.show();
+
+    // 2.16 CREATING NEW ELEMENTS
+
+    const newLineItem = $("<li>Line item 1</li>");
+    const anotherLineItem = $("<li>Line item 2</li>");
+
+    // 2.17 APPENDING NEW ELEMENTS
+
+    const ul = $("#append-new-elements");
+        ul.append(newLineItem);
+        ul.append(anotherLineItem);
+
+    // 2.18 REMOVING AND EMPTYING CONTENT
+
+    const removeLi =$("#remove-this");
+    const emptyUl = $("#empty-this");
+    removeLi.remove();
+    emptyUl.empty();
+
+    // 2.19 CHANGING CONTENT
+    //para cambiarlo hay que acceder con el : nombreatributo.html()
+
+    const changeThisText = $("#change-this-text");
+    const changeThisHtml = $("#change-this-html");
+    changeThisText.html('New text');
+    changeThisHtml.html(`
+                            <li>Line item A</li>
+                            <li>Line item B</li>
+                            <li>Line item C</li>`);
+
+    // 2.20 NAVIGATING UP AND DOWN THE DOM TREE
+
+    const child2 = $("#child-2");
+    const parent1 = child2.parents("#parent");
+    //have to put two times css() para cambiar el color y el fondo
+    parent1.css('background-color', 'red').css('color', 'white');
+    //solo cambia el color del children 2
+    const parent = $("#parent");
+    const child = parent.find("#child-2");
+    child.css('background-color', 'blue')
+
+    // 2.21 HANDING CLICK EVENTS
+
+    const handleClick = () => console.log('Handle click');
+    const clickable = $('.clickable');
+    clickable.click(handleClick);
+
+    // 2.22 EVENT TARGET
+    //aparece como texto normal, pero cuando pinchas tiene el background y el color definido
+    const handleEventTarget = (event) => {
+        const target = event.target;
+        console.log(target);
+        $(target).css('background-color', 'blue').css('color', 'white');
+    }
+    const eventTarget = $("#event-target");
+    eventTarget.click(handleEventTarget);
+
+    // 2.23 HIDING AND SHOWING CONTENT
+
+    let hideBtn, showBtn, hideShowHeader;
+    hideBtn = $('#hide');
+    showBtn = $('#show');
+    hideShowHeader = $('#hide-show');
+    const hideHandler = () => {
+        hideShowHeader.hide();
+    }
+    const showHandler = () => {
+        hideShowHeader.show();
+    }
+    hideBtn.click(hideHandler);
+    showBtn.click(showHandler);
+
+    // 2.24 CREATING A TODO LIST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+$(init);
+

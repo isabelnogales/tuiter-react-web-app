@@ -3,6 +3,8 @@ import logo from './logo.svg';
 
 //asi podemos acceder a la carpeta entera
 import Labs from "./Labs";
+import Assigment6 from "./Labs/a6";
+import Assigment7 from "./Labs/a7";
 import HelloWorld from "./Labs/a6/hello-world";
 import Tuiter from "./Tuiter";
 import {BrowserRouter} from "react-router-dom";
@@ -19,8 +21,10 @@ function App() {
                 <Routes>
                     // lab component as default landing screen
                     <Route index element={<Labs/>}/>
+                    <Route index element={<Assigment6/>}/>
+                    <Route path="/a7" element={<Assigment7/>}/>
                     <Route path="/hello" element={<HelloWorld/>}/>
-                    <Route path="/tuiter" element={<Tuiter/>}/>
+                    <Route path="/tuiter/*" element={<Tuiter/>}/>
                 </Routes>
             </BrowserRouter>
         </div>

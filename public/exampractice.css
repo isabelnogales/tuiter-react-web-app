@@ -1,0 +1,68 @@
+p#id-selector-1 {
+    background-color: red;
+    color: white;
+}
+h1#id-selector-2 {
+    background-color: yellow;
+    color: black;}
+
+.selector-1 .selector-3 {
+    /* refers to .selector-3 as a descendant of .selector-1   */
+    background-color: red;
+    color: white;
+}
+.selector-2 > .selector-3 > .selector-4 {
+    /* refers to .selector-4 as a direct child of .selector-3 */
+    /* which is a direct child of .selector-2                 */
+
+    background-color: yellow;
+    color: blue;
+}
+
+.border-selector {
+    border-width: 20px ;
+    border-style: solid;
+    border-color: blue;
+}
+
+.padded-top-left {
+    padding-top: 50px ;
+    padding-left: 50px;
+}
+
+.bg-color-yellow{
+    background-color: yellow;
+}
+
+.bg-color-green{
+    background-color: green;
+}
+
+.margin-all-around {
+    margin: 50px;
+}
+
+.dimension-portrait {
+    width: 75px;
+    height: 100px;
+}
+
+.pos-relative-nudge-up-right {
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+.pos-relative-nudge-down-right {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.pos-relative {
+    position: relative;
+}
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Writing to the DOM</h2>
+<script>
+    document.write('Welcome to JavaScript!')
+</script>
+
+<h2>Calculating an HTML string</h2>
+<script>
+    // creamos la funcion renderTodos
+    const renderTodos = (todos) => `
+    <ul>
+      ${todos.map(todo =>
+        `<li>${todo}</li>`
+    ).join('')}
+    </ul>`;
+    // creamos la lista todos
+    const todos = ['Pickup kids', 'Feed dogs']
+    // llamamos a la funcion
+    let html = renderTodos(todos);
+    document.write(html);
+</script>
+
+
+
+
+
+
+
+<script src="practice_class.js"></script>
+</body>
+</html>

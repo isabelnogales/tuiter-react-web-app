@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="1"> <!-- border attribute sets border width -->
+    <thead> <!-- contains table heading content -->
+    <tr> <!-- heading can have several rows; 1 row is common -->
+        <th>Username</th>
+        <th>Password</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Role</th>
+        <th>&nbsp;</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>isanogales</td>
+        <td>*****</td>
+        <td>Isabel</td>
+        <td>Nogales</td>
+        <td>Student</td>
+        <td>Edit/Remove;</td>
+    </tr>
+    <tr>
+        <td>isanogales</td>
+        <td>*****</td>
+        <td>Isabel</td>
+        <td>Nogales</td>
+        <td>Student</td>
+        <td>Edit/Remove;</td>
+    </tr>
+    <tbody>
+</table>
+
+
+
+<label for="usernameFld">
+    Username
+</label>
+<input id="usernameFld"
+       type="text"
+       title="Username"
+       placeholder="alice" />
+
+<label for="firstNameFld">
+    First Name</label>
+<input id="firstNameFld"
+       value="Alice" />
+
+
+<label for="dobFld">Date of Birth</label>
+
+<input
+        type="date"
+        id="dobFld"
+        value="2011-11-22" />
+
+<!-- VER -->
+<select name="role">
+    <option value="FACULTY">
+        Faculty
+    </option>
+    <option value="STUDENT">
+        Student
+    </option>
+    <option value="ADMIN">
+        Admin
+    </option>
+</select>
+
+
+
+
+
+<input
+        placeholder="hint"
+        title="HOLA"/>
+<!--	use input tag's text type to declare a single line input field text is default if type is left out. Use placeholder and title to give a hint of what information you're expecting. Optionally initialize the value of the field with value attribute-->
+
+</br>
+
+<h2>Text fields</h2>
+<form id="text-fields">
+    <label for="text-fields-username">Username:</label>
+    <input id="text-fields-username" placeholder="jdoe"/><br/>
+    <label for="text-fields-password">Password:</label>
+    <input type="password" id="text-fields-password"
+           value="123@#$asd"/><br/>
+    <label for="text-fields-first-name">First name:</label>
+    <input type="text" id="text-fields-first-name"
+           title="John"/><br/>
+    <label for="text-fields-last-name">Last name:</label>
+    <input type="text" id="text-fields-last-name"
+           placeholder="Doe" value="Wonderland"/>
+    <!-- copy rest of form elements here -->
+</form>
+
+<!--BUTTONS -->
+
+<button>Click me!</button>
+
+<p></p>
+
+<!-- DROPDOWNS -->
+
+<label for="select-one-genre">Favorite movie genre:</label><br/>
+<select id="select-one-genre">
+    <option value="COMEDY">Comedy</option>
+    <option value="DRAMA">Drama</option>
+    <option selected value="SCIFI">
+        Science Fiction</option>
+</select>
+
+<br/>
+
+<label for="select-many-genre">Favorite movie genres:</label><br/>
+<select id="select-many-genre" multiple>
+    <option selected >Comedy</option>
+    <option >Drama</option>
+    <option selected>Science Fiction</option>
+</select>
+
+<!-- RADIO BUTTONS -->
+<p></p>
+<input type="radio"
+       name="radio-genre" id="radio-comedy"/>
+<label for="radio-comedy">Comedy</label><br/>
+
+<input type="radio" value="DRAMA"
+       name="radio-genre" id="radio-drama" checked/>
+<label for="radio-drama">Drama</label><br/>
+
+<!-- CHECKBOXES-->
+
+<input type="checkbox" value="COMEDY"
+       name="check-genre" id="chkbox-comedy" checked/>
+<label for="chkbox-comedy">Comedy</label>    <br/>
+<input type="checkbox" value="DRAMA"
+       name="check-genre" id="chkbox-drama" checked/>
+<label for="chkbox-drama">Drama</label>    <br/>
+
+<p></p>
+
+<input type="radio" value="COMEDY"
+       name="radio" id="radio-comedy" checked/>
+<label for="radio-comedy">Comedy</label><br/>
+
+<input type="radio" value="DRAMA"
+       name="radio-genre" id="radio-drama" checked/>
+
+<br/>
+<label for="nvucmkd">asvjktg</label>
+<input id="nvucmkd"/>
+
+<style>
+    #qwe {
+        background-color: blue;
+    }
+    .wer {
+        background-color: yellow;
+    }
+</style>
+<div id="qwe" class="wer" style="background-color: red">ABC</div>
+
+
+<label>DSA</label>
+<input value="ewq"/>
+
+
+<label><input type="checkbox"/>BVC</label>
+<label><input type="checkbox"/>VCX</label>
+<label><input type="checkbox"/>CXZ</label>
+
+
+<input id="QWE" type="checkbox"/><label for="QWE">QWE</label>
+<input id="WER" type="checkbox"/><label for="WER">WER</label>
+<input id="ERT" type="checkbox"/><label for="ERT">ERT</label>
+</body>
+</html>

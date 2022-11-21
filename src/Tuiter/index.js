@@ -13,7 +13,7 @@ import {Route, Routes} from "react-router";
 
 //configure the store
 const store = configureStore(
-    {reducer: {who: whoReducer,tuits:tuitsReducer}});
+    {reducer: {who: whoReducer,tuitsData:tuitsReducer}});
 
 function Tuiter () {
     <Nav/>
